@@ -1,0 +1,22 @@
+--- LIST ---
+Primes            : [2, 3, 5, 7, 11]
+Squares           : [4, 9, 25, 49, 121]
+Sum of squares    : 208
+
+--- SET ---
+Characters in "hello world" : 11 (with space)
+Unique letters    : {d, e, h, l, o, r, w}
+Unique count      : 7
+"good morning" set : {d, g, i, m, n, o, r}
+Common letters    : {d, o, r}
+Common numbers    : List(4)
+
+--- TUPLE ---
+Tuple             : (22,Shreyan,false)
+Integer  (_1)     : 22
+String   (_2)     : Shreyan
+Boolean  (_3)     : false
+Arity             : 3
+  element 1 -> 22
+  element 2 -> Shreyan
+  element 3 -> false

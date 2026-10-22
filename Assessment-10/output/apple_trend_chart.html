@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Apple Price Trend</title>
+<script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.2"></script></head>
+<body><div id="chart"></div><script>vegaEmbed('#chart', {"$schema":"https://vega.github.io/schema/vega-lite/v5.json",
+"title":"Apple Price Trend (Rs/kg)","width":620,"height":330,
+"data":{"values":[{"day":"10-05","price":143.21},{"day":"10-06","price":139.26},{"day":"10-07","price":134.15},{"day":"10-08","price":131.25},{"day":"10-09","price":134.72},{"day":"10-10","price":129.69},{"day":"10-11","price":130.54},{"day":"10-12","price":125.89},{"day":"10-13","price":124.88},{"day":"10-14","price":126.59},{"day":"10-15","price":125.01},{"day":"10-16","price":116.91}]},
+"layer":[
+ {"mark":{"type":"area","line":{"color":"#2e7d32"},"color":"#c8e6c9","opacity":0.6},
+  "encoding":{"x":{"field":"day","type":"ordinal","title":"Day","axis":{"labelAngle":-40}},
+              "y":{"field":"price","type":"quantitative","title":"Price","scale":{"zero":false}}}},
+ {"mark":{"type":"point","filled":true,"color":"#1b5e20"},
+  "encoding":{"x":{"field":"day","type":"ordinal"},"y":{"field":"price","type":"quantitative"},
+              "tooltip":[{"field":"day"},{"field":"price"}]}},
+ {"mark":{"type":"rule","color":"#e65100","strokeDash":[6,4]},
+  "encoding":{"y":{"datum":130.175}}}
+]});</script></body></html>

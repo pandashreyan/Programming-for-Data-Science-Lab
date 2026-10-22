@@ -1,0 +1,20 @@
+Input list                  : List(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+filter  -> even numbers     : List(2, 4, 6, 8, 10)
+map     -> x * 3            : List(3, 6, 9, 12, 15, 18, 21, 24, 27, 30)
+flatMap -> (x, x^2)         : (1,1) (2,4) (3,9) (4,16) (5,25) (6,36) (7,49) (8,64) (9,81) (10,100)
+foldLeft -> product         : 3628800
+
+-- more combinators --
+foldRight (build string)    : 1-2-3-4-5-6-7-8-9-10
+reduceLeft (max)            : 10
+span (< 4)                  : (List(1, 2, 3),List(4, 5, 6, 7, 8, 9, 10))
+find (first > 6)            : Some(7)
+count (multiples of 3)      : 3
+zip with letters            : List((1,a), (2,b), (3,c), (4,d), (5,e))
+sortWith (descending)       : List(10, 9, 8, 7, 6, 5, 4, 3, 2, 1)
+maxBy (x % 4)               : 3
+flatten (nested)            : List(1, 2, 3, 4, 5)
+scanRight (sums)            : List(34, 27, 19, 10, 0)
+distinct (x % 5)            : List(1, 2, 3, 4, 0)
+
+odd -> *3 -> product       : 229635

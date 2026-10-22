@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fruit-wise Total Revenue (12 days)</title>
+<script src="https://cdn.plot.ly/plotly-1.54.1.min.js"></script>
+</head>
+<body>
+<div id="chart"></div>
+<script>
+(function () {
+  var data0 = {"x":["Apple","Grapes","Papaya","Pineapple"],"y":[53470.21,70495.23000000001,47560.61,35434.72],"marker":{"color":["rgb(239, 83, 80)","rgb(126, 87, 194)","rgb(255, 167, 38)","rgb(38, 166, 154)"]},"text":["Rs 53,470","Rs 70,495","Rs 47,561","Rs 35,435"],"type":"bar"};
+
+  var data = [data0];
+  var layout = {"title":"Fruit-wise Total Revenue (12 days)","yaxis":{"title":"Revenue in Rs"},"xaxis":{"title":"Fruit type"}};
+ var config = {};
+
+  Plotly.plot('chart', data, layout, config);
+})();
+</script>
+</body>
+</html>
+       

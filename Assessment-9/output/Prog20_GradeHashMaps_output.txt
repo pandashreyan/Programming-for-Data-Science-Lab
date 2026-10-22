@@ -1,0 +1,28 @@
+Class A grades           : (Arjun,64), (Priya,88), (Rahul,72), (Sneha,91)
+After re-inserting Arjun : (Arjun,79), (Priya,88), (Rahul,72), (Sneha,91)
+Entries in map           : 4
+
+Class B grades           : (Arjun,83), (Karan,77), (Priya,84), (Sneha,95)
+Merged (higher grade)    : (Arjun,83), (Karan,77), (Priya,88), (Rahul,72), (Sneha,95)
+
+Grade history (chained values per key):
+  Rahul  -> [72, 81, 69]
+  Priya  -> [88, 84]
+  Sneha  -> [91]
+
+Inserting into a 5-slot hash table:
+  collision -> Arjun  goes to slot 2 with Priya
+  collision -> Karan  goes to slot 3 with Rahul
+  collision -> Meera  goes to slot 0 with Sneha
+  collision -> Dev    goes to slot 2 with Priya, Arjun
+
+Slots:
+  slot 0 : Sneha(91) -> Meera(85)
+  slot 1 : -
+  slot 2 : Priya(88,84) -> Arjun(79) -> Dev(70)
+  slot 3 : Rahul(72) -> Karan(77)
+  slot 4 : -
+
+lookup(Priya) = List(88, 84)
+lookup(Dev)   = List(70)
+lookup(Zara)  = List()

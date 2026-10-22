@@ -1,0 +1,25 @@
+=== Integer array ===
+Elements           -> 2 | 5 | 9 | 14 | 20
+Number of elements -> 5
+First / Last       -> 2 / 20
+Sum (while loop)   -> 50
+Sum (recursion)    -> 50
+Sum (foldLeft)     -> 50
+
+=== String array ===
+Fruits             -> Papaya | Guava | Kiwi | Pineapple | Cherry
+Comma separated    -> Papaya, Guava, Kiwi, Pineapple, Cherry
+
+=== Iterating the integer array (while loop) ===
+Position 0 holds 2
+Position 1 holds 5
+Position 2 holds 9
+Position 3 holds 14
+Position 4 holds 20
+
+=== Iterating with zipWithIndex ===
+[0] = 2
+[1] = 5
+[2] = 9
+[3] = 14
+[4] = 20

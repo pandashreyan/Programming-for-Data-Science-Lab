@@ -1,0 +1,35 @@
+All people
+  Name     Age  City
+  Kavya     33  Pune
+  Rohan     26  Mumbai
+  Anita     41  Delhi
+  Vikram    29  Pune
+  Meera     37  Mumbai
+
+Older than 30
+  Person(Kavya,33,Pune)
+  Person(Anita,41,Delhi)
+  Person(Meera,37,Mumbai)
+
+Grouped by city
+  Delhi: Anita
+  Mumbai: Rohan, Meera
+  Pune: Kavya, Vikram
+
+Sentences
+  Kavya is 33 years old and lives in Pune
+  Rohan is 26 years old and lives in Mumbai
+  Anita is 41 years old and lives in Delhi
+  Vikram is 29 years old and lives in Pune
+  Meera is 37 years old and lives in Mumbai
+
+Sorted by age (ascending)
+  1. Rohan - 26
+  2. Vikram - 29
+  3. Kavya - 33
+  4. Meera - 37
+  5. Anita - 41
+
+Average age : 33.2
+copy()      : Person(Rohan,26,Bengaluru)  (original unchanged: Person(Rohan,26,Mumbai))
+hashCode eq : true
